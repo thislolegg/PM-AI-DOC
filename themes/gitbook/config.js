@@ -18,8 +18,7 @@ const CONFIG = {
   GITBOOK_FOLDER_HOVER_EXPAND: false, // 左侧导航文件夹鼠标悬停时自动展开；若为false，则要点击才能展开
 
   // Widget
-  GITBOOK_WIDGET_REVOLVER_MAPS:
-    process.env.NEXT_PUBLIC_WIDGET_REVOLVER_MAPS || 'false', // 地图插件
+  GITBOOK_WIDGET_REVOLVER_MAPS: 'false', // 地图插件
   GITBOOK_WIDGET_TO_TOP: true // 跳回顶部
 }
 export default CONFIG

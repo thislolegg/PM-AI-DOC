@@ -6,7 +6,7 @@ import Live2D from '@/components/Live2D'
 import LoadingCover from '@/components/LoadingCover'
 import NotionIcon from '@/components/NotionIcon'
 import NotionPage from '@/components/NotionPage'
-import ShareBar from '@/components/ShareBar'
+// import ShareBar from '@/components/ShareBar'
 import DashboardBody from '@/components/ui/dashboard/DashboardBody'
 import DashboardHeader from '@/components/ui/dashboard/DashboardHeader'
 import { siteConfig } from '@/lib/config'
@@ -209,7 +209,6 @@ const LayoutBase = props => {
                         null,
                         CONFIG
                       ) === 'true' && <RevolverMaps />}
-                      <Live2D />
                     </>
                   )}
                   {/* gitbook主题首页只显示公告 */}
@@ -217,7 +216,7 @@ const LayoutBase = props => {
                 </div>
 
                 <AdSlot type='in-article' />
-                <Live2D />
+  
               </div>
             </div>
           )}
@@ -363,8 +362,7 @@ const LayoutSlug = props => {
                 <NotionPage post={post} />
               </div>
 
-              {/* 分享 */}
-              <ShareBar post={post} />
+              {/* 分享功能已禁用 */}
               {/* 文章分类和标签信息 */}
               <div className='flex justify-between'>
                 {siteConfig('POST_DETAIL_CATEGORY') && post?.category && (
